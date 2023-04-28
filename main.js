@@ -23,6 +23,9 @@ let computerPoints = 0
 let playerPoints = 0
 
 function oneRound(a, b) {
+
+    console.log(`Your selection is ${a}`)
+
     if(a === "rock") {
         if(b === "Paper") {
             return console.log("You lost! Paper wins to rock."),
