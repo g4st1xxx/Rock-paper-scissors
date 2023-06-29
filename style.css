@@ -129,6 +129,15 @@ header{
     color: white;
     background-color: black;
 }
+.indicator{
+    display: flex;
+    justify-content: space-between;
+}
+.indicator h3{
+    font-size: 22px;
+    font-family: 'RockPlaza';
+    margin: 0px 20px 0px 20px;
+}
 
 /* eventos*/
 
