@@ -68,7 +68,7 @@ function restartButtonAppear(){
     restartButton.style.display = 'flex';
 }
 function restartBottomText(){
-    bottomText.innerText = ("Un juego, dos contrincantes...un destino.")
+    bottomText.innerText = ("YOU HAVE WHAT IT TAKES?")
 }
 restartButton.addEventListener('click', () => {
     restartGame()
@@ -85,11 +85,11 @@ restartButton.addEventListener('click', () => {
 
 function isFiveChecker() {
     if(playerPoints === 5){
-        bottomText.innerText = ("Buena perro"),
+        bottomText.innerText = ("I've always believed in you"),
         restartButtonAppear(),
         endGame()
     }else if(computerPoints === 5){
-        bottomText.innerText = ("Domadito XD"),
+        bottomText.innerText = ("You are so fucking BAD dude"),
         restartButtonAppear(),
         endGame()
     }
@@ -103,12 +103,12 @@ function oneRound(a, b) {
 
     if(a === "rock") {
         if(b === "Paper") {
-            return bottomText.innerText = ("You lost! Paper wins to rock."),
+            return bottomText.innerText = ("You lose, Dwayne was not enough to beat that old papyrus..."),
             computerPoints += 1,
             UploadCounter(),
             isFiveChecker();
         }else if(b === "Scissors") {
-            return bottomText.innerText = ("You won! Rock wins to Scissors"),
+            return bottomText.innerText = ("You won! Dwayne crushed the hell outta that giant ass scissor!"),
             playerPoints += 1,
             UploadCounter(),
             isFiveChecker();
@@ -117,12 +117,12 @@ function oneRound(a, b) {
         }
     }else if(a === "paper") {
         if(b === "Scissors") {
-            return bottomText.innerText = ("You lost! Scissors wins to Paper"),
+            return bottomText.innerText = ("You lost, that giant ass scissors looks very sharp..."),
             computerPoints += 1,
             UploadCounter(),
             isFiveChecker();
         }else if(b === "Rock") {
-            return bottomText.innerText = ("You won! Paper wins to Rock"),
+            return bottomText.innerText = ("You won! Dwayne was not match for your enveloping powers!"),
             playerPoints += 1,
             UploadCounter(),
             isFiveChecker();
@@ -131,12 +131,12 @@ function oneRound(a, b) {
         }
     }else if(a === "scissors") {
         if(b === "Rock") {
-            return bottomText.innerText = ("You lost! Rock wins to Scissors"),
+            return bottomText.innerText = ("You lost! Your giant ass scissor is no match against Dwayne."),
             computerPoints += 1,
             UploadCounter(),
             isFiveChecker();
         }else if(b === "Paper") {
-            return bottomText.innerText = ("You won! Scissors win to Paper"),
+            return bottomText.innerText = ("You won! That old papyrus was a piece of cake."),
             playerPoints += 1,
             UploadCounter(),
             isFiveChecker();

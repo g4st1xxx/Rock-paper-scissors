@@ -142,3 +142,6 @@ header{
     border-bottom:black;
     transition: 0.3s;
 }
+#restart-button:hover{
+    border-style: inset;
+}
